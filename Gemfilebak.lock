@@ -37,28 +37,18 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    awesome_print (1.2.0)
     builder (3.2.2)
-    byebug (2.7.0)
-      columnize (~> 0.3)
-      debugger-linecache (~> 1.2)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-rails-source-maps (1.4.0)
-      coffee-script-source (>= 1.6.1)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    columnize (0.8.9)
     commonjs (0.2.7)
-    coolline (0.4.3)
-    database_rewinder (0.2.0)
-    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     erb2haml (0.1.5)
       html2haml
@@ -69,8 +59,6 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
-    faker (1.1.2)
-      i18n (~> 0.5)
     ffi (1.9.3)
     formatador (0.2.4)
     guard (2.2.5)
@@ -82,9 +70,6 @@ GEM
     guard-rspec (2.5.0)
       guard (>= 1.1)
       rspec (~> 2.11)
-    guard-spring (0.0.4)
-      guard
-      spring
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -93,10 +78,6 @@ GEM
       haml (>= 3.1, < 5.0)
       railties (>= 4.0.1)
     hike (1.2.3)
-    hirb (0.7.2)
-    hirb-unicode (0.0.5)
-      hirb (~> 0.5)
-      unicode-display_width (~> 0.1.1)
     hpricot (0.8.6)
     html2haml (1.0.1)
       erubis (~> 2.7.0)
@@ -110,9 +91,6 @@ GEM
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-turbolinks (2.0.2)
-      railties (>= 3.1.0)
-      turbolinks
     json (1.8.1)
     less (2.5.0)
       commonjs (~> 0.2.7)
@@ -129,10 +107,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_source (0.8.2)
-    migrant (1.5.0)
-      faker
-      rails (>= 3.0.0)
-      term-ansicolor
     mime-types (1.25.1)
     mini_portile (0.6.0)
     minitest (5.3.4)
@@ -145,16 +119,6 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry-byebug (1.3.2)
-      byebug (~> 2.7)
-      pry (~> 0.9.12)
-    pry-coolline (0.2.4)
-      coolline (~> 0.3)
-    pry-doc (0.6.0)
-      pry (~> 0.9)
-      yard (~> 0.8)
-    pry-rails (0.3.2)
-      pry (>= 0.9.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -179,7 +143,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
-    rake_shared_context (0.2.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.4)
       ffi (>= 0.5.0)
@@ -203,15 +166,12 @@ GEM
       rspec-mocks (~> 2.13.0)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
-    sass (3.3.7)
-    sass-rails (4.0.1)
+    sass (3.2.19)
+    sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
-      sass (>= 3.1.10)
-      sprockets-rails (~> 2.0.0)
-    sass-rails-source-maps (0.0.4)
-      rails
-      sass (>= 3.3.0.rc.3)
-      sprockets (>= 2.3.0)
+      sass (~> 3.2.0)
+      sprockets (~> 2.8, <= 2.11.0)
+      sprockets-rails (~> 2.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -221,17 +181,15 @@ GEM
       activemodel (~> 4.0)
     slop (3.5.0)
     spring (1.1.3)
-    sprockets (2.12.1)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.0.1)
+    sprockets-rails (2.1.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    term-ansicolor (1.3.0)
-      tins (~> 1.0)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -239,59 +197,39 @@ GEM
     thread_safe (0.3.4)
     tilt (1.4.1)
     timers (1.1.0)
-    tins (1.3.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
-    twitter-bootswatch-rails-helpers (3.1.0.0)
-      twitter-bootswatch-rails (~> 3.1.0)
     tzinfo (1.2.0)
       thread_safe (~> 0.1)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicode-display_width (0.1.1)
-    yard (0.8.7.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
   coffee-rails (~> 4.0.0)
-  coffee-rails-source-maps
-  database_rewinder
   erb2haml
   factory_girl_rails
   guard-rspec
-  guard-spring
   haml-rails
-  hirb
-  hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
-  jquery-turbolinks
   less-rails
-  migrant
   nokogiri
   pg
-  pry-byebug
-  pry-coolline
-  pry-doc
-  pry-rails
   rails (= 4.1.1)
   rails_12factor
-  rake_shared_context
   rspec-rails
-  sass-rails (= 4.0.1)
-  sass-rails-source-maps
+  sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simple_form
   spring
   therubyracer
   turbolinks
   twitter-bootswatch-rails!
-  twitter-bootswatch-rails-helpers
   uglifier (>= 1.3.0)
